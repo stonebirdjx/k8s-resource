@@ -1,0 +1,8 @@
+apiVersion: v2
+appVersion: 5.0.0
+description: rocketmq Helm chart for Kubernetes
+maintainers:
+- name: stonebirdjx
+  url: https://github.com/stonebirdjx/k8s-resource/tree/master/rocketmq-helm
+name: rocketmq
+version: 6.1.9

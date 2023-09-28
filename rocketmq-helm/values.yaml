@@ -1,0 +1,20 @@
+namespace: "stonebird"
+version: v5.0.0
+imagePullPolicy: IfNotPresent
+
+storageClass: rook-cephfs
+
+operator:
+  image: 1245863260/rocketmq-operator:0.3.0
+
+nameserver:
+  image: 1245863260/rocketmq-nameserver:5.0.0-alpine-operator-0.3.0
+  storageSize: 10Gi
+
+broker:
+  image: 1245863260/rocketmq-broker:5.0.0-alpine-operator-0.3.0
+  storageSize: 10Gi
+  replicas: 3
+
+console:
+  image: 1245863260/rocketmq-console:2.0.0
